@@ -1,0 +1,73 @@
+.blind{
+    width: 1px; height: 1px;
+    margin: -1px;
+    overflow: hidden;
+    clip: rect(0 0 0 0);
+    position: absolute;
+}
+
+.inner{
+    margin: 0 auto;
+    padding: 0 104px;
+    max-width: 1408px;
+}
+
+strong{
+    font-weight: bold;
+}
+
+.header .logo a{ 
+    background: url(../img/sp_pc.png);
+    background-repeat: no-repeat;
+    background-size: 328px 205px;
+    background-position: -105px 0px;
+}
+
+.sc-search .ic-search,
+.sc-apply .link-apply::after,
+.sc-content .group-apply .ic-more,
+.footer .site-area .btn-relate::before,
+.sc-content .title-box .count::after,
+.sc-content .pagination .btn,
+.m-lnb .search-box .btn-search,
+.m-lnb .filter-title:before{ 
+    background: url(../img/sp_pc.png);
+    background-repeat: no-repeat;
+    background-size: 328px 205px;
+}
+
+/* 작은 화면 pc, 태블릿 가기 전까지 
+   1920 ~ 1025
+*/
+@media (max-width:1230px) {
+    .container {
+        padding-top: 60px;
+    }
+    .header .logo a,
+    .nav-btn-box .btn-open,
+    .nav-btn-box .btn-close,
+    .m-lnb form .btn-close
+    {
+        background: url(../img/sp_mo.png);
+        background-repeat: no-repeat;
+        background-size: 195px 181px;
+    }
+}
+/* 태블릿 1024 ~ [768] */
+@media (max-width:1024px) {
+    .inner {
+        padding: 0 50px;
+    }
+    .sc-content.teams .title-box .count::after,
+    .sc-search .m-search-area .ic-search,
+    .footer .site-area .btn-relate::before,
+    .sc-apply .link-apply::after,
+    .sc-content .pagination .btn{
+        background: url(../img/sp_mo.png);
+        background-repeat: no-repeat;
+        background-size: 195px 181px;
+    }
+}
+/* 모바일 767 ~ [320] */
+@media (max-width:767px) {
+}
